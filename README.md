@@ -2,7 +2,7 @@
 
 This is a simple to-do list web app built using Flask. It allows users to add, update, and delete tasks.
 
-![screenshot](static/app.png)
+![screenshot](static/app.png) 
 
 ## Features
 
