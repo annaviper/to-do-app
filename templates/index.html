@@ -20,13 +20,13 @@
         <tr>
             <th>Task</th>
             <th>Added</th>
-            <th>Actions</th>
+            <th>Done</th>
         </tr>
         {% for task in tasks %}
             <tr>
                 <td>{{task.content}}</td>
                 <td>{{task.created.strftime('%Y-%m-%d %H:%M:%S')}}</td>
-                <td>{{task.done}}</td>
+                <td>{{ '✅' if task.done else '❌' }}</td>
                 <td>
                     <a href="/delete/{{task.id}}">Delete</a>
                     <a href="/edit/{{task.id}}">Edit</a>
